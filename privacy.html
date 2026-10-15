@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隱私權政策｜AI-Stock</title>
+  <meta name="description" content="說明 AI-Stock 如何存取、使用、保存 Google 使用者資料，以及使用者可採取的選擇。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header>
+    <a class="brand" href="index.html">AI-Stock</a>
+    <nav aria-label="主選單">
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="privacy.html" aria-current="page">隱私權政策</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>隱私權政策</h1>
+    <p>最後更新：2026 年 10 月 15 日</p>
+    <p>本政策說明當您將 Google 帳戶連結至 AI-Stock 時，AI-Stock 會存取哪些資料、如何使用，以及您可以做的選擇。</p>
+
+    <h2>1. 營運者</h2>
+    <p>AI-Stock 由專案維護者（以化名「AI-Stock Maintainer」表示）營運。聯絡方式：請至 <a href="https://github.com/gyeungonion-oss/ai-stock-oauth-site/issues" rel="noopener">GitHub Issues</a> 提出網站意見回饋與隱私相關請求。GitHub Issues 為公開頁面，不保證機密處理，請勿在其中張貼個人資料、帳戶資訊、授權憑證或其他敏感內容；涉及敏感事項時，請先在 Issue 中僅說明需要以安全方式聯繫，不要附上細節。</p>
+
+    <h2>2. 服務性質</h2>
+    <p>AI-Stock 是經使用者授權的私人股票研究與紀錄自動化工具，不是公開的投資顧問平台，也不是券商交易服務，不提供投資建議，亦不代為下單。</p>
+
+    <h2 id="scopes">3. 我們存取的 Google 使用者資料與權限</h2>
+    <p>AI-Stock 僅在您完成授權後存取 Google 資料，並使用 Google OAuth 授權流程，不會要求您輸入 Google 密碼。目前要求的 OAuth 權限範圍（scopes）如下：</p>
+    <ul>
+      <li><code>https://www.googleapis.com/auth/drive</code>：Google Drive 的完整讀寫權限。</li>
+      <li><code>https://www.googleapis.com/auth/spreadsheets</code>：Google 試算表的完整讀寫權限。</li>
+    </ul>
+    <p class="note"><strong>權限範圍較廣，特此揭露：</strong>上述權限在 Google 的授權機制下，技術上可涵蓋您 Google Drive 中的檔案與您可存取的試算表，並非只限於個別選定的檔案。AI-Stock 在實際運作上僅使用指定的研究資料夾與研究用試算表，但這是應用程式的操作設計，並非 OAuth 權限本身的限制。</p>
+
+    <h2>4. 資料的使用方式</h2>
+    <p>AI-Stock 使用上述權限，在您授權的範圍內讀取與寫入股票研究資料，包括：上傳證據包與事件包至 Google Drive、在 Google 試算表追加證據索引、建立目前狀態，以及讀取決策佇列。我們不會將這些資料用於投放廣告。</p>
+
+    <h2>5. 第三方 AI 服務與資料分享</h2>
+    <p>研究資料在處理過程中，內容可能會被傳送至營運者選用的第三方大型語言模型（LLM）服務進行分析。這些服務各自有其資料處理條款、保存期間與模型訓練政策，AI-Stock 無法控制，本政策不對其作出任何保證。AI-Stock 不會出售您的 Google 使用者資料；法律要求時，可能依法揭露。</p>
+
+    <h2>6. Google API 服務使用者資料政策</h2>
+    <p>AI-Stock 對從 Google API 取得之資訊的使用與轉移，應遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API 服務使用者資料政策</a>，包含其中適用的限制性使用（Limited Use）規定。由於本應用程式要求的 Drive 權限範圍較廣，Google 可能將其歸類為受限範圍（restricted scope），並要求額外的審查程序。AI-Stock 須遵守 Google 的相關政策與要求；使用第三方 LLM 服務處理 Google 使用者資料時，亦須符合該政策，這是營運者的合規責任，本網站不代表已通過 Google 的任何審查或驗證。</p>
+
+    <h2>7. 保存與安全</h2>
+    <p>授權憑證僅儲存於本機受保護的檔案，並不納入版本控制。本政策不對靜態加密、特定資料保存期限或任何安全認證作出承諾。</p>
+
+    <h2>8. 撤銷授權與刪除資料</h2>
+    <p>您可以隨時在 <a href="https://myaccount.google.com/permissions" rel="noopener">Google 帳戶的第三方存取權管理頁面</a>撤銷 AI-Stock 的存取權。如需要求刪除 AI-Stock 持有的相關資料，請透過第 1 節的 GitHub Issues 提出（請勿公開敏感細節）。</p>
+    <p>請注意：撤銷授權後，已存在於您 Google Drive 或 Google 試算表中、屬於您的內容仍會保留，不會因撤銷授權而被刪除，如需刪除請自行於 Google 帳戶中處理。</p>
+
+    <h2>9. Cookie 與追蹤</h2>
+    <p>本網站為靜態網頁，不設定 Cookie，不使用分析、廣告或追蹤指令碼，也不載入遠端字型。</p>
+
+    <h2>10. 政策變更</h2>
+    <p>本政策若有變更，將於本頁公布，並更新「最後更新」日期。</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 AI-Stock。<a href="index.html">回首頁</a></p>
+  </footer>
+</body>
+</html>
